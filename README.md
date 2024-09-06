@@ -1,19 +1,11 @@
-## Video Trimming Script
+# Video Trimmer Batch Script
 
-This batch script is designed to trim the last 3 minutes (customizable) from all video files in the folder where the script is located.
+This batch script trims the last 3 minutes from all `.mp4` videos in the folder where the script is located and saves the trimmed videos to a subdirectory called `output_dir`.
 
-### Features
-- Automatically processes all video files in the script's directory.
-- Trims the specified duration from the end of each video file.
-- Outputs the trimmed videos with a `_trimmed` suffix in the same directory.
+## Usage
 
-### Requirements
-- Ensure that the path to `ffmpeg` is added to the PATH environment variable.
+1. Place the batch script in the folder containing the `.mp4` videos you want to process.
+2. Run the script. It will create an `output_dir` subdirectory if it does not already exist.
+3. The script will process each `.mp4` video, trimming the last 3 minutes, and save the trimmed videos to the `output_dir`.
 
-### How to Use
-1. Place this script in the folder containing the videos you want to trim.
-2. Run the script.
-3. The script will process each video file and save the trimmed version in the same folder with a `_trimmed` suffix.
-
-### Customization
-- To change the trimming duration, adjust the script accordingly.
+**Make sure that the path to `ffmpeg` is added to the PATH environment variable.**
